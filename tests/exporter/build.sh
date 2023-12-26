@@ -9,5 +9,6 @@ rsync -avr --delete ./bundles/exporter/ ./docker/images/bundle-exporter/
 rm -f ./docker/images/docker-compose.yaml
 mv ./docker/images/build.sh ./docker/images/build-docker.sh
 cp -rf ./docker/images/* ./
+sed -i '7d' ./bundle-exporter/package.json
 mv Dockerfile.exporter Dockerfile
 docker buildx build . --output type=docker,name=elestio4test/penpot-exporter:latest | docker load
