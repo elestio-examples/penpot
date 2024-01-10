@@ -39,7 +39,7 @@ environments:
   - key: "PENPOT_ASSETS_STORAGE_BACKEND"
     value: "assets-fs"
   - key: "PENPOT_STORAGE_ASSETS_FS_DIRECTORY"
-    value: "/opt/[PIPELINE_NAME]/data/assets"
+    value: "/opt/data/assets"
   - key: "PENPOT_TELEMETRY_ENABLED"
     value: "true"
   - key: "PENPOT_TELEMETRY_REFERER"
